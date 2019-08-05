@@ -8,7 +8,7 @@
     },
     "scripts": {
         "serve": "vue-cli-service serve --open",
-        "build": "vue-cli-service build --target lib --name adminUi ./src/App.vue",
+        "build": "vue-cli-service build --target lib --name adminUi ./src/main.js",
         "lint": "vue-cli-service lint",
         "build-lib": "vue-cli-service build --target lib --name adminUi ./src/components/index.js"
     },

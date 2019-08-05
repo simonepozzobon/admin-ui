@@ -10,11 +10,11 @@ module.exports = {
         hotOnly: false,
     },
     configureWebpack: {
-        output: {
-            filename: 'index.js',
-            libraryTarget: 'umd'
-            library: 'adminUi',
-        },
+        // output: {
+        //     filename: 'index.js',
+        //     libraryTarget: 'umd',
+        //     library: 'adminUi',
+        // },
         externals: {
             vue: 'vue',
             jQuery: 'jquery',
