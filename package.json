@@ -1,6 +1,6 @@
 {
     "name": "@esserun/admin-ui",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Admin Ui modules for vue",
     "repository": {
         "type": "git",
@@ -8,11 +8,9 @@
     },
     "scripts": {
         "serve": "vue-cli-service serve --open",
-        "build-old": "vue-cli-service build --target lib --name adminUi ./src/main.js",
+        "build": "vue-cli-service build --target lib --name adminUi ./src/index.js",
         "lint": "vue-cli-service lint",
-        "build-lib": "vue-cli-service build --target lib --name adminUi ./src/components/index.js",
-        "dev": "node build-utils/update-index-file.js && vue-cli-service serve",
-        "build": "node build-utils/build-lib.js"
+        "build-lib": "vue-cli-service build --target lib --name adminUi ./src/components/index.js"
     },
     "keywords": [
         "admin",
@@ -73,6 +71,7 @@
         "null-loader": "^3.0.0",
         "rxjs": "^6.5.2",
         "sass-loader": "^7.1.0",
+        "storybook": "^1.0.0",
         "stylelint": "^10.1.0",
         "stylelint-config-css-modules": "^1.4.0",
         "stylelint-config-prettier": "^5.2.0",

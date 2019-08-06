@@ -53,14 +53,8 @@ export default {
 }
 </script>
 
-<meta>
-    {
-        "description": "A component that says \"HelloA\" with orange text."
-    }
-</meta>
-
-<style lang="scss" module>
-@import '~styles/shared';
+<style lang="scss" scoped>
+@import '../sass/shared';
 
 .admin-container {
     &__content {
