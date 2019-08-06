@@ -53,8 +53,8 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import '../sass/shared';
+<style lang="scss">
+@import './sass/shared';
 
 .admin-container {
     &__content {
