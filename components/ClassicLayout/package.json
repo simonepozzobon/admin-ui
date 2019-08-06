@@ -1,0 +1,10 @@
+{
+    "name": "@esserun/classic-layout",
+    "version": "0.0.0",
+    "description": "Classic Layout Ui",
+    "author": "Simone Pozzobon",
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    }
+}
