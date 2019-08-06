@@ -234,7 +234,8 @@ function generatePackageJson(package) {
             peerDependencies: libConfig.peerDependencies,
             publishConfig: {
                 access: 'public'
-            }
+            },
+            version: '0.0.0',
         },
         null,
         2
