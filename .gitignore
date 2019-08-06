@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+storybook-static
 
 # local env files
 .env.local
@@ -8,6 +9,7 @@ node_modules
 
 # Log files
 npm-debug.log*
+lerna-debug.log*
 yarn-debug.log*
 yarn-error.log*
 

@@ -1,0 +1,8 @@
+{
+    "name": "@esserun/container",
+    "version": "0.0.1",
+    "description": "Container Ui",
+    "author": "Simone Pozzobon",
+    "license": "MIT",
+    "publishConfig": "public"
+}
