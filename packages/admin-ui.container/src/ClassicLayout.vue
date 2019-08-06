@@ -4,7 +4,12 @@
     :class="randomColorClass"
 >
     <div class="admin-classic-layout__top-bar">
-        <slot name="top-bar"></slot>
+        <div class="admin-template__logo">
+            <slot name="logo"></slot>
+        </div>
+        <div class="admin-template__menu">
+            <slot name="menu"></slot>
+        </div>
     </div>
     <div class="admin-classic-layout__container">
         <div class="admin-classic-layout__sidebar">
@@ -32,6 +37,9 @@ export default {
             this.randomColorClass = 'admin-classic-layout--' + colors[idx]
         },
     },
+    mounted: function () {
+        this.randomColor()
+    },
 }
 </script>
 
@@ -43,6 +51,19 @@ export default {
         display: flex;
         height: 100%;
         min-height: 100vh;
+    }
+
+    &__top-bar {
+        position: fixed;
+        height: $spacer * 4;
+        width: 100%;
+        background-color: $gray-100;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: ($spacer / 2) $spacer;
+        // @include custom-box-shadow(lighten($black, 25));
+        z-index: $zindex-fixed;
     }
 
     &__sidebar {

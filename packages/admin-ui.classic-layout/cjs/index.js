@@ -171,14 +171,19 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0a547734-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ClassicLayout.vue?vue&type=template&id=09acfbaa&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"admin-classic-layout",class:_vm.randomColorClass},[_c('div',{staticClass:"admin-classic-layout__top-bar"},[_vm._t("top-bar")],2),_c('div',{staticClass:"admin-classic-layout__container"},[_c('div',{staticClass:"admin-classic-layout__sidebar"},[_vm._t("sidebar")],2),_c('div',{staticClass:"admin-classic-layout__content"},[_vm._t("content")],2)])])}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"0a547734-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ClassicLayout.vue?vue&type=template&id=6a607f7d&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"admin-classic-layout",class:_vm.randomColorClass},[_c('div',{staticClass:"admin-classic-layout__top-bar"},[_c('div',{staticClass:"admin-template__logo"},[_vm._t("logo")],2),_c('div',{staticClass:"admin-template__menu"},[_vm._t("menu")],2)]),_c('div',{staticClass:"admin-classic-layout__container"},[_c('div',{staticClass:"admin-classic-layout__sidebar"},[_vm._t("sidebar")],2),_c('div',{staticClass:"admin-classic-layout__content"},[_vm._t("content")],2)])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/ClassicLayout.vue?vue&type=template&id=09acfbaa&
+// CONCATENATED MODULE: ./src/ClassicLayout.vue?vue&type=template&id=6a607f7d&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/ClassicLayout.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
 //
 //
 //
@@ -211,6 +216,9 @@ var staticRenderFns = []
       var idx = Math.floor(Math.random() * colors.length) + 0;
       this.randomColorClass = 'admin-classic-layout--' + colors[idx];
     }
+  },
+  mounted: function mounted() {
+    this.randomColor();
   }
 });
 // CONCATENATED MODULE: ./src/ClassicLayout.vue?vue&type=script&lang=js&

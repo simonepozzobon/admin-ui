@@ -8,7 +8,8 @@
     },
     "scripts": {
         "serve": "vue-cli-service serve --open",
-        "build": "vue-cli-service build --target lib --name adminUi ./src/index.js",
+        "build-old": "vue-cli-service build --target lib --name adminUi ./src/index.js",
+        "build": "node ./build-utils/build-lib.js",
         "lint": "vue-cli-service lint",
         "build-lib": "vue-cli-service build --target lib --name adminUi ./src/components/index.js",
         "storybook": "start-storybook -p 6006",

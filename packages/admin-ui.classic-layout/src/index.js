@@ -6,14 +6,16 @@
 
 import ClassicLayout from './ClassicLayout.vue'
 import Container from './Container.vue'
+import UiButton from './UiButton.vue'
 
 // Export components individually
-export { ClassicLayout, Container }
+export { ClassicLayout, Container, UiButton }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
   Vue.component('ClassicLayout', ClassicLayout)
   Vue.component('Container', Container)
+  Vue.component('UiButton', UiButton)
 }
 
 // Export the library as a plugin
