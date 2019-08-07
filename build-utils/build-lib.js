@@ -24,6 +24,7 @@ fs.emptyDirSync(getPath('../packages'))
 
 // Build the main lib, with all components packaged into a plugin
 console.info('🏗 Building main library')
+console.log(`${vueCliServicePath} build src/index.js --target lib --name index --dest dist/`);
 execSync(
     `${vueCliServicePath} build src/index.js --target lib --name index --dest dist/`
 )

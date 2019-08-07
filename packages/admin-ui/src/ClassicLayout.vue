@@ -37,7 +37,7 @@ export default {
             this.randomColorClass = 'admin-classic-layout--' + colors[idx]
         },
     },
-    mounted: function () {
+    created: function () {
         this.randomColor()
     },
 }

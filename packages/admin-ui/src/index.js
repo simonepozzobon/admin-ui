@@ -4,18 +4,22 @@
 //
 // YOU SHOULD NEVER UPDATE THIS FILE DIRECTLY
 
+import AButton from './AButton.vue'
+import AContainer from './AContainer.vue'
+import AInput from './AInput.vue'
+import ASidebarItem from './ASidebarItem.vue'
 import ClassicLayout from './ClassicLayout.vue'
-import Container from './Container.vue'
-import UiButton from './UiButton.vue'
 
 // Export components individually
-export { ClassicLayout, Container, UiButton }
+export { AButton, AContainer, AInput, ASidebarItem, ClassicLayout }
 
 // What should happen if the user installs the library as a plugin
 function install(Vue) {
+  Vue.component('AButton', AButton)
+  Vue.component('AContainer', AContainer)
+  Vue.component('AInput', AInput)
+  Vue.component('ASidebarItem', ASidebarItem)
   Vue.component('ClassicLayout', ClassicLayout)
-  Vue.component('Container', Container)
-  Vue.component('UiButton', UiButton)
 }
 
 // Export the library as a plugin
