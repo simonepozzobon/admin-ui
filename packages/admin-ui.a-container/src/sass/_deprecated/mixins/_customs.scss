@@ -1,0 +1,11 @@
+@mixin custom-box-shadow($color) {
+  box-shadow: 4px 8px 32px 0 rgba($color, .1), 8px 16px 64px 0 rgba($color, .05);
+}
+
+@mixin custom-text-shadow($color) {
+  text-shadow: 2px 4px 8px rgba($color, .1), 4px 8px 16px rgba($color, .05);
+}
+
+@mixin custom-inner-shadow($color) {
+  box-shadow: inset 0px 0px ($spacer * 2) rgba($color, .1);
+}

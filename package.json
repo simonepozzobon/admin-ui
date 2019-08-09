@@ -27,13 +27,19 @@
         "core-js": "^2.6.5",
         "jquery": "^3.4.1",
         "popper.js": "^1.15.0",
-        "vue": "^2.6.10"
+        "tiptap": "^1.24.1",
+        "tiptap-extensions": "^1.26.1",
+        "vue": "^2.6.10",
+        "vuejs-datepicker": "^1.6.2"
     },
     "dependencies": {
         "bootstrap": "^4.3.1",
         "core-js": "^2.6.5",
         "jquery": "^3.4.1",
-        "popper.js": "^1.15.0"
+        "popper.js": "^1.15.0",
+        "tiptap": "^1.24.1",
+        "tiptap-extensions": "^1.26.1",
+        "vuejs-datepicker": "^1.6.2"
     },
     "devDependencies": {
         "@babel/cli": "^7.5.5",

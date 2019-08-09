@@ -1,0 +1,182 @@
+
+.btn-green {
+  @include tfc-button-variant($tfc-green, $tfc-dark-green);
+}
+
+.btn-yellow {
+  @include tfc-button-variant($tfc-yellow, $tfc-dark-yellow);
+}
+
+.btn-blue {
+  @include tfc-button-variant($tfc-blue, $tfc-dark-blue);
+}
+
+.btn-orange {
+  @include tfc-button-variant($tfc-orange, $tfc-dark-orange);
+}
+
+.btn-gray {
+  @include tfc-button-variant($gray-lightest, $gray-lighter);
+}
+
+
+
+@if $enable-grid-classes {
+  .row {
+    @include make-row();
+  }
+
+  // Remove the negative margin from default .row, then the horizontal padding
+  // from all immediate children columns (to prevent runaway style inheritance).
+  .mt {
+    margin-top: $spacer;
+  }
+
+  .mb {
+    margin-bottom: $spacer;
+  }
+
+  .pt {
+    padding-top: $spacer;
+  }
+
+  .pb {
+    padding-bottom: $spacer;
+  }
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+}
+
+//
+// Main Menu Responsive
+//
+
+#main-menu-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+#main-menu {
+  position: sticky;
+  top: 0;
+  height: 90px;
+  flex-direction: row;
+  background-color: $nav-gray;
+
+  > .navbar-brand {
+    flex-direction: column;
+  }
+
+  > ul {
+    > li {
+      > a {
+        line-height: 1.5rem;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+
+#main-menu {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+
+        > .navbar-collapse {
+          // position: absolute;
+          flex-direction: row;
+          width: 100%;
+          top: 90%;
+          right: 0;
+          background-color: lighten($nav-gray, 25%);
+
+          > ul {
+            flex-direction: row;
+            align-items: center;
+
+            > li {
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      @include media-breakpoint-up($next) {
+
+      }
+    }
+  }
+}
+
+.badge-red {
+  @include badge-variant($tfc-red);
+}
+
+.badge-dark-red {
+  @include badge-variant($tfc-dark-red);
+}
+
+.badge-yellow {
+  @include badge-variant($tfc-yellow);
+}
+
+.badge-green-var {
+  @include badge-variant($tfc-green-var);
+}
+
+.badge-orange {
+  @include badge-variant($tfc-orange);
+}
+
+.badge-dark-green {
+  @include badge-variant($tfc-dark-green);
+  color: $black;
+}
+
+.badge-dark-orange {
+  @include badge-variant($tfc-dark-orange);
+  color: $black;
+}
+
+.badge-dark-blue {
+  @include badge-variant($tfc-dark-blue);
+  color: $black;
+}
+
+.badge-dark-yellow {
+  @include badge-variant($tfc-dark-yellow);
+  color: $black;
+}
+
+.glossary {
+  display: flex;
+  flex-wrap: wrap;
+
+  > .badge {
+    font-family: $font-family-serif;
+    font-size: $font-size-base;
+    font-weight: $font-weight-base;
+    line-height: $line-height-base;
+    margin-left: ($spacer / 3);
+    margin-bottom: ($spacer / 4);
+    color: $black;
+    padding-top: ($spacer / 3);
+    padding-bottom: ($spacer / 3);
+    padding-left: ($spacer * 2/3);
+    padding-right: ($spacer * 2/3);
+  }
+}

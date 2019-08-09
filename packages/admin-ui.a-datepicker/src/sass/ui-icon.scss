@@ -1,0 +1,33 @@
+
+.ui-icon {
+    &__path {
+        transition: $transition-base;
+    }
+
+    &--cyan &__path {
+        fill: $cyan;
+    }
+
+    &--white &__path {
+        fill: $white;
+    }
+
+    &--pointer {
+        cursor: pointer;
+    }
+
+    &--hoverable {
+        cursor: pointer;
+    }
+
+    &--hover-darker:hover & {
+        &__path {
+            fill: rgba($white, .6);
+            transition: $transition-base;
+        }
+    }
+
+    &--has-shadows {
+        filter: drop-shadow( 0 0 16px rgba($black, .6));
+    }
+}

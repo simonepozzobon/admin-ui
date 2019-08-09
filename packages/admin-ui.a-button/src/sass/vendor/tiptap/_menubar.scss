@@ -1,0 +1,44 @@
+.menubar {
+    margin-bottom: 1rem;
+    transition: visibility 0.2s 0.4s, opacity 0.2s 0.4s;
+    background-color: rgba($lightest-gray, .5);
+    padding: $spacer / 1.618;
+    @include border-radius(5px);
+    @include box-shadow($btn-box-shadow);
+
+    &.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &.is-focused {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.2s, opacity 0.2s;
+    }
+
+    &__button {
+        display: inline-flex;
+        background: $lightest-gray;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: $font-size-base * 0.75;
+        letter-spacing: 3px;
+        border: 0;
+        color: $black;
+        padding: 0.2rem 0.5rem;
+        margin-right: 0.2rem;
+        border-radius: 3px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba($color-black, 0.05);
+            box-shadow: $btn-focus-box-shadow;
+        }
+
+        &.is-active {
+            background-color: rgba($color-black, 0.1);
+            box-shadow: $btn-focus-box-shadow;
+        }
+    }
+}

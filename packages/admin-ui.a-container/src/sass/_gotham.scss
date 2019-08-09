@@ -1,0 +1,312 @@
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('#{$gotham-font-path}/Gotham-Medium.eot');
+    src: local('Gotham Medium'), local('Gotham-Medium'),
+        url('#{$gotham-font-path}/Gotham-Medium.eot?#iefix') format('embedded-opentype'),
+        url('#{$gotham-font-path}/Gotham-Medium.woff2') format('woff2'),
+        url('#{$gotham-font-path}/Gotham-Medium.woff') format('woff'),
+        url('#{$gotham-font-path}/Gotham-Medium.ttf') format('truetype'),
+        url('#{$gotham-font-path}/Gotham-Medium.svg#Gotham-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+// 
+// @font-face {
+//     font-family: 'Gotham Ultra';
+//     src: url('#{$gotham-font-path}/Gotham-UltraItalic.eot');
+//     src: local('Gotham Ultra Italic'), local('Gotham-UltraItalic'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic.svg#Gotham-UltraItalic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-Ultra.eot');
+//     src: local('Gotham Ultra'), local('Gotham-Ultra'),
+//         url('#{$gotham-font-path}/Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-Ultra.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-Ultra.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-Ultra.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-Ultra.svg#Gotham-Ultra') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-UltraItalic_1.eot');
+//     src: local('Gotham Ultra Italic'), local('Gotham-UltraItalic'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-UltraItalic_1.svg#Gotham-UltraItalic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-Thin.eot');
+//     src: local('Gotham Thin'), local('Gotham-Thin'),
+//         url('#{$gotham-font-path}/Gotham-Thin.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-Thin.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-Thin.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-Thin.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-Thin.svg#Gotham-Thin') format('svg');
+//     font-weight: 100;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-ExtraLight.eot');
+//     src: local('Gotham ExtraLight'), local('Gotham-ExtraLight'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLight.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLight.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLight.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLight.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLight.svg#Gotham-ExtraLight') format('svg');
+//     font-weight: 200;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham Book';
+//     src: url('#{$gotham-font-path}/Gotham-BookItalic.eot');
+//     src: local('Gotham Book Italic'), local('Gotham-BookItalic'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic.svg#Gotham-BookItalic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-MediumItalic.eot');
+//     src: local('Gotham Medium Italic'), local('Gotham-MediumItalic'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic.svg#Gotham-MediumItalic') format('svg');
+//     font-weight: 500;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-LightItalic.eot');
+//     src: local('Gotham Light Italic'), local('Gotham-LightItalic'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic.svg#Gotham-LightItalic') format('svg');
+//     font-weight: 300;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham Extra';
+//     src: url('#{$gotham-font-path}/Gotham-ExtraLightItalic.eot');
+//     src: local('Gotham Extra Light Italic'), local('Gotham-ExtraLightItalic'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic.svg#Gotham-ExtraLightItalic') format('svg');
+//     font-weight: 200;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-BookItalic_1.eot');
+//     src: local('Gotham Book Italic'), local('Gotham-BookItalic'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-BookItalic_1.svg#Gotham-BookItalic') format('svg');
+//     font-weight: normal;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-BoldItalic.eot');
+//     src: local('Gotham Bold Italic'), local('Gotham-BoldItalic'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic.svg#Gotham-BoldItalic') format('svg');
+//     font-weight: bold;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-Book.eot');
+//     src: local('Gotham Book'), local('Gotham-Book'),
+//         url('#{$gotham-font-path}/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-Book.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-Book.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-Book.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-Book.svg#Gotham-Book') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-ThinItalic.eot');
+//     src: local('Gotham Thin Italic'), local('Gotham-ThinItalic'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic.svg#Gotham-ThinItalic') format('svg');
+//     font-weight: 100;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-MediumItalic_1.eot');
+//     src: local('Gotham Medium Italic'), local('Gotham-MediumItalic'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-MediumItalic_1.svg#Gotham-MediumItalic') format('svg');
+//     font-weight: 500;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-Light.eot');
+//     src: local('Gotham Light'), local('Gotham-Light'),
+//         url('#{$gotham-font-path}/Gotham-Light.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-Light.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-Light.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-Light.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-Light.svg#Gotham-Light') format('svg');
+//     font-weight: 300;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-BlackItalic.eot');
+//     src: local('Gotham Black Italic'), local('Gotham-BlackItalic'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic.svg#Gotham-BlackItalic') format('svg');
+//     font-weight: 900;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-Bold.eot');
+//     src: local('Gotham Bold'), local('Gotham-Bold'),
+//         url('#{$gotham-font-path}/Gotham-Bold.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-Bold.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-Bold.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-Bold.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-Bold.svg#Gotham-Bold') format('svg');
+//     font-weight: bold;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-ExtraLightItalic_1.eot');
+//     src: local('Gotham ExtraLight Italic'), local('Gotham-ExtraLightItalic'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-ExtraLightItalic_1.svg#Gotham-ExtraLightItalic') format('svg');
+//     font-weight: 200;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-LightItalic_1.eot');
+//     src: local('Gotham Light Italic'), local('Gotham-LightItalic'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-LightItalic_1.svg#Gotham-LightItalic') format('svg');
+//     font-weight: 300;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-ThinItalic_1.eot');
+//     src: local('Gotham Thin Italic'), local('Gotham-ThinItalic'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-ThinItalic_1.svg#Gotham-ThinItalic') format('svg');
+//     font-weight: 100;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-Black.eot');
+//     src: local('Gotham Black'), local('Gotham-Black'),
+//         url('#{$gotham-font-path}/Gotham-Black.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-Black.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-Black.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-Black.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-Black.svg#Gotham-Black') format('svg');
+//     font-weight: 900;
+//     font-style: normal;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-BlackItalic_1.eot');
+//     src: local('Gotham Black Italic'), local('Gotham-BlackItalic'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-BlackItalic_1.svg#Gotham-BlackItalic') format('svg');
+//     font-weight: 900;
+//     font-style: italic;
+// }
+//
+// @font-face {
+//     font-family: 'Gotham';
+//     src: url('#{$gotham-font-path}/Gotham-BoldItalic_1.eot');
+//     src: local('Gotham Bold Italic'), local('Gotham-BoldItalic'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic_1.eot?#iefix') format('embedded-opentype'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic_1.woff2') format('woff2'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic_1.woff') format('woff'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic_1.ttf') format('truetype'),
+//         url('#{$gotham-font-path}/Gotham-BoldItalic_1.svg#Gotham-BoldItalic') format('svg');
+//     font-weight: bold;
+//     font-style: italic;
+// }
