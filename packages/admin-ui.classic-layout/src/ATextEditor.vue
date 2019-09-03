@@ -173,6 +173,8 @@ import {
 }
 from 'tiptap-extensions'
 
+import Iframe from './plugins/Iframe'
+
 export default {
     name: 'TextEditor',
     props: {
@@ -220,6 +222,7 @@ export default {
                     new Heading({
                         levels: [1, 2, 3]
                     }),
+                    new Iframe(),
                     new Image(),
                     new HorizontalRule(),
                     new ListItem(),
