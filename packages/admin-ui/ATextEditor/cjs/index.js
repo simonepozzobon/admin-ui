@@ -24760,6 +24760,7 @@ function inherits_inherits(subClass, superClass) {
 
 
 
+console.log('imported');
 
 var Iframe_Iframe =
 /*#__PURE__*/
@@ -24822,7 +24823,7 @@ function (_Node) {
             }
           }
         },
-        template: "\n        <div class=\"iframe\">\n          <iframe class=\"iframe__embed\" :src=\"src\"></iframe>\n          <input class=\"iframe__input\" @paste.stop type=\"text\" v-model=\"src\" v-if=\"view.editable\" />\n        </div>\n      "
+        template: "\n        <div class=\"iframe\">\n          <iframe class=\"iframe__embed\" :src=\"src\"></iframe>\n        </div>\n      "
       };
     }
   }]);

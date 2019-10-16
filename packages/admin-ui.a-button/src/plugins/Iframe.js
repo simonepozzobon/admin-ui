@@ -1,5 +1,7 @@
 import { Node } from 'tiptap'
 
+console.log('imported')
+
 export default class Iframe extends Node {
 
   get name() {
@@ -49,7 +51,6 @@ export default class Iframe extends Node {
       template: `
         <div class="iframe">
           <iframe class="iframe__embed" :src="src"></iframe>
-          <input class="iframe__input" @paste.stop type="text" v-model="src" v-if="view.editable" />
         </div>
       `
     }
