@@ -282,7 +282,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import './sass/shared';
 @import './sass/vendor/tiptap/main';
 

@@ -103,11 +103,13 @@ export default {
             if (this.align == 'center') {
                 return 'ui-title--align-center'
             }
+            return null
         },
         mainClass: function () {
             if (this.isMain) {
                 return 'ui-title--ismain'
             }
+            return null
         },
         fontSizeClass: function () {
             if (this.fontSize) {
@@ -119,36 +121,43 @@ export default {
             if (this.color) {
                 return 'text-' + this.color
             }
+            return null
         },
         uppercaseClass: function () {
             if (!this.uppercase) {
                 return 'ui-title--text-normal'
             }
+            return null
         },
         paddingClass: function () {
             if (!this.hasPadding) {
                 return 'ui-title--no-padding'
             }
+            return null
         },
         marginClass: function () {
             if (!this.hasMargin) {
                 return 'ui-title--no-margin'
             }
+            return null
         },
         displayClass: function () {
             if (this.display) {
                 return 'ui-title--' + this.display
             }
+            return null
         },
         hoverableClass: function () {
             if (this.hoverable) {
                 return 'ui-title--hoverable'
             }
+            return null
         },
         xPaddingClass: function () {
             if (this.xPadding === true || this.xPadding === 'true') {
                 return 'ui-title--x-padding'
             }
+            return null
         },
     }
 }
@@ -156,7 +165,6 @@ export default {
 
 <style lang="scss" scoped>
 @import './sass/shared';
-
 .ui-title {
     $self: &;
     padding-top: $spacer;

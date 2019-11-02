@@ -55,7 +55,6 @@ export default {
 
 <style lang="scss" scoped>
 @import './sass/shared';
-
 .admin-container {
     &__content {
         background-color: $light;

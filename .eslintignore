@@ -1,0 +1,8 @@
+/node_modules/*
+/build-utils/*
+/.storybook/*
+/.git/*
+/tests/*
+/stories/*
+/**.json
+/vue.config.js

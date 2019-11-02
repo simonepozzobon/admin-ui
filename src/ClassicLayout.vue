@@ -35,9 +35,6 @@ export default {
             let colors = ['blue', 'red', 'green', 'orange', 'purple']
             let idx = Math.floor(Math.random() * colors.length)
             this.randomColorClass = 'admin-classic-layout--' + colors[idx]
-
-            // eslint-disable-next-line
-            console.log('colore', idx, this.randomColorClass);
         },
     },
     created: function () {
@@ -53,8 +50,12 @@ export default {
 
 <style lang="scss" scoped>
 @import './sass/shared';
-
 .admin-classic-layout {
+    $purple: #613d7c;
+    $blue: #4597DE;
+    $green-light: #E1F1F1;
+    $orange: #EAA461;
+    $red: #f18b8b;
     transition: $transition-base;
 
     &__container {
@@ -95,23 +96,23 @@ export default {
     }
 
     &--blue &__content {
-        @include gradient-directional(lighten($blue, 35), lighten($blue, 40), 145deg);
+        @include gradient-directional(lighten($blue, 35), lighten($blue, 40), 100deg);
     }
 
     &--red &__content {
-        @include gradient-directional(lighten($red, 20), lighten($red, 25), 145deg);
+        @include gradient-directional(lighten($red, 20), lighten($red, 25), 100deg);
     }
 
     &--green &__content {
-        @include gradient-directional(lighten($green, 25), lighten($green, 35), 145deg);
+        @include gradient-directional(lighten($green-light, 0), lighten($green-light, 3), 100deg);
     }
 
     &--orange &__content {
-        @include gradient-directional(lighten($orange, 25), lighten($orange, 35), 145deg);
+        @include gradient-directional(lighten($orange, 28), lighten($orange, 33), 100deg);
     }
 
     &--purple &__content {
-        @include gradient-directional(lighten($purple, 55), lighten($purple, 60), 145deg);
+        @include gradient-directional(lighten($purple, 55), lighten($purple, 60), 100deg);
     }
 }
 </style>

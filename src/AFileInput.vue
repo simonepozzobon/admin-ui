@@ -149,7 +149,7 @@ export default {
             return new Promise(resolve => {
                 let reader = new FileReader()
                 // console.log('preview');
-                let src = reader.addEventListener('load', event => {
+                reader.addEventListener('load', () => {
                     resolve(reader.result)
                 })
                 reader.readAsDataURL(file)
@@ -171,7 +171,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import '~styles/shared';
 @import './sass/shared';
 .a-file-input {
 

@@ -63,6 +63,7 @@ export default {
             if (this.color) {
                 return 'text-' + this.color
             }
+            return null
         },
         uppercaseClass: function () {
             if (!this.uppercase) {
@@ -101,7 +102,6 @@ export default {
 
 <style lang="scss" scoped>
 @import './sass/shared';
-
 .a-panel-title {
     text-transform: uppercase;
     letter-spacing: 2px;
