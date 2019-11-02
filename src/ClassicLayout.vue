@@ -33,24 +33,35 @@ export default {
     methods: {
         randomColor: function () {
             let colors = ['blue', 'red', 'green', 'orange', 'purple']
-            let idx = Math.floor(Math.random() * colors.length) + 0
+            let idx = Math.floor(Math.random() * colors.length)
             this.randomColorClass = 'admin-classic-layout--' + colors[idx]
+
+            // eslint-disable-next-line
+            console.log('colore', idx, this.randomColorClass);
         },
     },
     created: function () {
         this.randomColor()
     },
+    mounted: function () {
+        if (!this.randomColorClass) {
+            this.randomColor()
+        }
+    },
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import './sass/shared';
 
 .admin-classic-layout {
+    transition: $transition-base;
+
     &__container {
         display: flex;
         height: 100%;
         min-height: 100vh;
+        transition: $transition-base;
     }
 
     &__top-bar {
@@ -79,6 +90,8 @@ export default {
     &__content {
         padding: ($spacer * 6) ($spacer * 2) ($spacer * 2);
         width: 100%;
+
+        transition: $transition-base;
     }
 
     &--blue &__content {
