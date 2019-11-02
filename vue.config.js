@@ -19,14 +19,11 @@ module.exports = {
         // config.resolve.alias
         //     .set('vue$', 'vue/dist/vue.esm.js')
     },
-    // css: {
-    //     extract: false,
-    //     loaderOptions: {
-    //         sass: {
-    //             data: `
-    //                 @import "./src/sass/_shared.scss";
-    //             `
-    //         }
-    //     }
-    // }
+    css: {
+        loaderOptions: {
+            scss: {
+                prependData: `@import "~@/sass/_shared.scss";`
+            }
+        }
+    },
 }
