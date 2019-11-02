@@ -1,3 +1,5 @@
+const PurgecssPlugin = require('purgecss-webpack-plugin')
+const glob = require('glob-all')
 const path = require('path')
 
 module.exports = {
@@ -10,6 +12,14 @@ module.exports = {
         proxy: 'http://admin-ui.test'
     },
     configureWebpack: {
+        plugins: [
+            new PurgecssPlugin({
+                paths: glob.sync([
+                    path.join(__dirname, './src/**/*.vue'),
+                    path.join(__dirname, './src/**/*.js')
+                ])
+            })
+        ],
         externals: {
             // vue: 'vue',
             jQuery: 'jquery',
@@ -20,6 +30,7 @@ module.exports = {
         //     .set('vue$', 'vue/dist/vue.esm.js')
     },
     css: {
+        extract: false,
         loaderOptions: {
             scss: {
                 prependData: `@import "~@/sass/_shared.scss";`

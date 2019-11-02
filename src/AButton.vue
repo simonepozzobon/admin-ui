@@ -204,7 +204,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './sass/shared';
 .ui-button {
     margin-bottom: $spacer;
 
