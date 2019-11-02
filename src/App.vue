@@ -1,6 +1,17 @@
 <template>
 <classic-layout>
-    Ciao
+    <template slot="logo">
+        Pannello di amministrazione
+    </template>
+    <template slot="menu">
+        menu
+    </template>
+    <template slot="sidebar">
+        side
+    </template>
+    <template slot="content">
+        content
+    </template>
 </classic-layout>
 </template>
 
@@ -16,5 +27,4 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './sass/shared';
 </style>

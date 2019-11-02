@@ -85,8 +85,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './sass/shared';
-
 .a-datepicker {
     &__wrapper {
         background: none !important;

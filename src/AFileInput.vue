@@ -171,8 +171,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import '~styles/shared';
-@import './sass/shared';
 .a-file-input {
 
     &__input {

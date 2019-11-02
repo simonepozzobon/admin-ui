@@ -4,21 +4,29 @@ module.exports = {
     devServer: {
         open: process.platform === 'darwin',
         host: '0.0.0.0',
-        port: 8080, // CHANGE YOUR PORT HERE!
+        port: 8082, // CHANGE YOUR PORT HERE!
         https: false,
         hotOnly: false,
+        proxy: 'http://admin-ui.test'
     },
     configureWebpack: {
         externals: {
-            vue: 'vue',
+            // vue: 'vue',
             jQuery: 'jquery',
         },
     },
     chainWebpack: (config) => {
-        config.resolve.alias
-            .set('styles', path.resolve(__dirname, 'src/assets/sass'))
-
-        config.resolve.alias
-            .set('vue$', 'vue/dist/vue.esm.js')
+        // config.resolve.alias
+        //     .set('vue$', 'vue/dist/vue.esm.js')
     },
+    css: {
+        extract: false,
+        loaderOptions: {
+            sass: {
+                data: `
+                    @import "./src/styles.scss";
+                `
+            }
+        }
+    }
 }

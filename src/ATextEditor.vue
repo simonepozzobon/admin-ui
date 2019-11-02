@@ -283,7 +283,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import './sass/shared';
 @import './sass/vendor/tiptap/main';
 
 .admin-editor {
