@@ -10,21 +10,20 @@
         side
     </template>
     <template slot="content">
-        content
+        <a-text-editor></a-text-editor>
     </template>
 </classic-layout>
 </template>
 
 <script>
 import ClassicLayout from './ClassicLayout.vue'
+import ATextEditor from './ATextEditor.vue'
 
 export default {
     name: 'App',
     components: {
         ClassicLayout,
+        ATextEditor,
     },
 }
 </script>
-
-<style lang="scss" scoped>
-</style>

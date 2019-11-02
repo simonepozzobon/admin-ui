@@ -100,6 +100,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './sass/shared';
 .a-panel-title {
     text-transform: uppercase;
     letter-spacing: 2px;

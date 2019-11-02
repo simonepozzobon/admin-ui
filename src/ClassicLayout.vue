@@ -49,6 +49,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './sass/shared';
 .admin-classic-layout {
     $purple: #613d7c;
     $blue: #4597DE;

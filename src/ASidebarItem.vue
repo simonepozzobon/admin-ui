@@ -23,6 +23,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './sass/shared';
 .admin-ui-sidebar-item {
     padding-top: $spacer / 3;
     padding-bottom: $spacer / 3;

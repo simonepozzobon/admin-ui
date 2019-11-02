@@ -102,6 +102,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import './sass/shared';
 .a-input {
     @include border-radius($border-radius);
     background-color: $faded;
