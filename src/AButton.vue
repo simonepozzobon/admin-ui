@@ -141,46 +141,55 @@ export default {
             else if (this.color && this.theme === 'outline') {
                 return 'btn-outline-' + this.color
             }
+            return null
         },
         blockClass: function () {
             if (this.block) {
                 return 'btn-block'
             }
+            return null
         },
         displayClass: function () {
             if (this.display) {
                 return 'ui-button--' + this.display
             }
+            return null
         },
         noContainerClass: function () {
             if (!this.hasContainer) {
                 return 'ui-button--no-container'
             }
+            return null
         },
         alignSelfClass: function () {
             if (this.alignSelf == 'start') {
                 return 'ui-button--align-self-start'
             }
+            return null
         },
         marginClass: function () {
             if (!this.hasMargin) {
                 return 'ui-button--no-margin'
             }
+            return null
         },
         fontColorClass: function () {
             if (this.fontColor) {
                 return 'text-' + this.fontColor
             }
+            return null
         },
         sizeClass: function () {
             if (this.size) {
                 return 'btn-' + this.size
             }
+            return null
         },
         customSizeClass: function () {
             if (this.size) {
                 return 'ui-button--' + this.size
             }
+            return null
         }
     },
     methods: {

@@ -63,6 +63,7 @@ export default {
             if (this.color) {
                 return 'text-' + this.color
             }
+            return null
         },
         uppercaseClass: function () {
             if (!this.uppercase) {
