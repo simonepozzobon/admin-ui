@@ -1,120 +1,118 @@
 {
-    "name": "@esserun/admin-ui",
-    "version": "1.0.2",
-    "description": "Admin Ui modules for vue",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/simonepozzobon/admin-ui.git"
+  "name": "@esserun/admin-ui",
+  "version": "1.0.2",
+  "description": "Admin Ui modules for vue",
+  "author": "Simone Pozzobon",
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "node ./build-utils/build-lib.js",
+    "lint": "vue-cli-service lint",
+    "build-bundle": "vue-cli-service build --target lib --name adminUi ./src/index.js",
+    "build-lib": "vue-cli-service build --target lib --name adminUi ./src/components/index.js",
+    "build-old": "vue-cli-service build --target lib --name adminUi ./src/index.js",
+    "build-storybook": "build-storybook",
+    "storybook": "start-storybook -p 6006"
+  },
+  "main": "./dist/adminUi.common.js",
+  "files": [
+    "dist/*",
+    "*.json",
+    "*.js",
+    "README.md"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "core-js": "^3.3.2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "tiptap": "^1.24.1",
+    "tiptap-extensions": "^1.26.1",
+    "vuejs-datepicker": "^1.6.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@storybook/addon-actions": "^5.1.10",
+    "@storybook/addon-links": "^5.1.10",
+    "@storybook/addons": "^5.1.10",
+    "@storybook/vue": "^5.1.10",
+    "@vue/cli-plugin-babel": "^4.0.5",
+    "@vue/cli-plugin-e2e-cypress": "^4.0.5",
+    "@vue/cli-plugin-eslint": "^4.0.5",
+    "@vue/cli-plugin-unit-jest": "^4.0.5",
+    "@vue/cli-service": "^4.0.5",
+    "@vue/component-compiler-utils": "^3.0.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.8.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-vue": "^2.0.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "fs-extra": "^8.1.0",
+    "globby": "^10.0.1",
+    "imagemin-lint-staged": "^0.4.0",
+    "lint-staged": "^9.2.1",
+    "lodash": "^4.17.15",
+    "markdownlint-cli": "^0.17.0",
+    "node-sass": "^4.12.0",
+    "null-loader": "^3.0.0",
+    "rxjs": "^6.5.2",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-css-modules": "^1.4.0",
+    "stylelint-config-prettier": "^5.2.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-config-standard": "^18.3.0",
+    "vue": "^2.6.10",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "peerDependencies": {
+    "bootstrap": "^4.3.1",
+    "core-js": "^2.6.5",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "tiptap": "^1.24.1",
+    "tiptap-extensions": "^1.26.1",
+    "vue": "^2.6.10",
+    "vuejs-datepicker": "^1.6.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
     },
-    "scripts": {
-        "serve": "vue-cli-service serve --open",
-        "build-old": "vue-cli-service build --target lib --name adminUi ./src/index.js",
-        "build-bundle": "vue-cli-service build --target lib --name adminUi ./src/index.js",
-        "build": "node ./build-utils/build-lib.js",
-        "lint": "vue-cli-service lint",
-        "build-lib": "vue-cli-service build --target lib --name adminUi ./src/components/index.js",
-        "storybook": "start-storybook -p 6006",
-        "build-storybook": "build-storybook"
-    },
-    "keywords": [
-        "admin",
-        "ui",
-        "vue"
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
     ],
-    "author": "Simone Pozzobon",
-    "license": "MIT",
-    "main": "./dist/adminUi.common.js",
-    "peerDependencies": {
-        "bootstrap": "^4.3.1",
-        "core-js": "^2.6.5",
-        "jquery": "^3.4.1",
-        "popper.js": "^1.15.0",
-        "tiptap": "^1.24.1",
-        "tiptap-extensions": "^1.26.1",
-        "vue": "^2.6.10",
-        "vuejs-datepicker": "^1.6.2"
-    },
-    "dependencies": {
-        "bootstrap": "^4.3.1",
-        "core-js": "^2.6.5",
-        "jquery": "^3.4.1",
-        "popper.js": "^1.15.0",
-        "tiptap": "^1.24.1",
-        "tiptap-extensions": "^1.26.1",
-        "vuejs-datepicker": "^1.6.2"
-    },
-    "devDependencies": {
-        "@babel/cli": "^7.5.5",
-        "@babel/core": "^7.5.5",
-        "@babel/preset-env": "^7.5.5",
-        "@storybook/addon-actions": "^5.1.10",
-        "@storybook/addon-links": "^5.1.10",
-        "@storybook/addons": "^5.1.10",
-        "@storybook/vue": "^5.1.10",
-        "@vue/cli-plugin-babel": "^3.10.0",
-        "@vue/cli-plugin-e2e-cypress": "^3.10.0",
-        "@vue/cli-plugin-eslint": "^3.10.0",
-        "@vue/cli-plugin-unit-jest": "^3.10.0",
-        "@vue/cli-service": "^3.10.0",
-        "@vue/component-compiler-utils": "^3.0.0",
-        "@vue/eslint-config-prettier": "^5.0.0",
-        "@vue/eslint-config-standard": "^4.0.0",
-        "@vue/test-utils": "^1.0.0-beta.29",
-        "babel-eslint": "^10.0.1",
-        "babel-jest": "^24.8.0",
-        "babel-loader": "^8.0.6",
-        "babel-preset-vue": "^2.0.2",
-        "cross-env": "^5.2.0",
-        "eslint": "^5.16.0",
-        "eslint-plugin-vue": "^5.2.3",
-        "fs-extra": "^8.1.0",
-        "globby": "^10.0.1",
-        "imagemin-lint-staged": "^0.4.0",
-        "lerna": "^3.16.4",
-        "lint-staged": "^9.2.1",
-        "lodash": "^4.17.15",
-        "markdownlint-cli": "^0.17.0",
-        "node-sass": "^4.12.0",
-        "null-loader": "^3.0.0",
-        "rxjs": "^6.5.2",
-        "sass-loader": "^7.1.0",
-        "storybook": "^1.0.0",
-        "stylelint": "^10.1.0",
-        "stylelint-config-css-modules": "^1.4.0",
-        "stylelint-config-prettier": "^5.2.0",
-        "stylelint-config-recess-order": "^2.0.3",
-        "stylelint-config-standard": "^18.3.0",
-        "vue": "^2.6.10",
-        "vue-loader": "^15.7.1",
-        "vue-template-compiler": "^2.6.10"
-    },
-    "eslintConfig": {
-        "root": true,
-        "env": {
-            "node": true
-        },
-        "extends": [
-            "plugin:vue/essential",
-            "eslint:recommended"
-        ],
-        "rules": {},
-        "parserOptions": {
-            "parser": "babel-eslint"
-        }
-    },
-    "files": [
-        "dist/*",
-        "*.json",
-        "*.js",
-        "README.md"
-    ],
-    "postcss": {
-        "plugins": {
-            "autoprefixer": {}
-        }
-    },
-    "browserslist": [
-        "> 1%",
-        "last 2 versions"
-    ]
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "keywords": [
+    "admin",
+    "ui",
+    "vue"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/simonepozzobon/admin-ui.git"
+  }
 }
