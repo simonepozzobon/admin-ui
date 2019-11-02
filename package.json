@@ -9,6 +9,7 @@
     "scripts": {
         "serve": "vue-cli-service serve --open",
         "build-old": "vue-cli-service build --target lib --name adminUi ./src/index.js",
+        "build-bundle": "vue-cli-service build --target lib --name adminUi ./src/index.js",
         "build": "node ./build-utils/build-lib.js",
         "lint": "vue-cli-service lint",
         "build-lib": "vue-cli-service build --target lib --name adminUi ./src/components/index.js",
@@ -22,6 +23,7 @@
     ],
     "author": "Simone Pozzobon",
     "license": "MIT",
+    "main": "./dist/adminUi.common.js",
     "peerDependencies": {
         "bootstrap": "^4.3.1",
         "core-js": "^2.6.5",
@@ -100,6 +102,12 @@
             "parser": "babel-eslint"
         }
     },
+    "files": [
+        "dist/*",
+        "*.json",
+        "*.js",
+        "README.md"
+    ],
     "postcss": {
         "plugins": {
             "autoprefixer": {}
