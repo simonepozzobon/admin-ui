@@ -59,7 +59,7 @@
         "lint-staged": "^9.4.2",
         "lodash": "^4.17.15",
         "markdownlint-cli": "^0.17.0",
-        "node-sass": "^4.13.0",
+        "node-sass": "^7.0.0",
         "null-loader": "^3.0.0",
         "purgecss-webpack-plugin": "^1.6.0",
         "rxjs": "^6.5.3",
